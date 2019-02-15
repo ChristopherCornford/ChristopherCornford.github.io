@@ -1,7 +1,182 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/sidebarmobile.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<style>
+	body {
+	  margin: 0;
+	}
+	.textsmoothing {
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+</style>
+</head>
+
 <body>
-<h1> Christopher Cornford's Website </h1>
-<h2> There will be some <b> BADASS </b> content here</h2>
+
+<div class="textsmoothing sidebar">
+	<img src="images/Website Logo1.png" alt="logo">
+	<a class="active" href="index.html">Home</a>
+	<a href="html/print.html">Print</a>
+	<a href="html/digital.html">Digital</a>
+	<a href="html/about.html">About</a>
+	<c><br></c>
+	<c><hr></c>
+	<b>ken@kennethhowell.design</b>
+	<b>978-502-0592</b>
+</div>
+	
+<div id="mySidepanel" class="textsmoothing sidebarmobile">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<a class="active" href="index.html">Home</a>
+	<a href="html/print.html">Print</a>
+	<a href="html/digital.html">Digital</a>
+	<a href="html/about.html">About</a>
+	<br>
+	<hr>
+	<br>
+	<b>ken@kennethhowell.design</b>
+	<b>978-502-0592</b>
+</div>
+
+<button class="openbtn" onclick="openNav()">☰</button> 
+<div class="topbar"><img src="images/Website Logo1.png" alt="logo"></div>
+
+<div class="content">
+	<div class="heading textsmoothing">
+		<p>Welcome to</p>
+		<h1>My Portfolio</h1>
+		<p>Scroll down to view some of my digital and printed design projects.</p>
+	</div>
+	<div class="gallery">
+		<a href="html/rwby-shirt.html"><div class="container">
+			<img src="images/Print/1-RWBY-Typography.jpg" alt="RWBY SHIRT" class="block">
+			<div class="middleblock">
+				<div class="blocktext">RWBY Typography <br>-T Shirt-</div>
+			</div>
+		</div></a>
+
+		<a href="html/pw-catalog.html"><div class="container">
+			<img src="images/Digital/12-People-Watching-Catalog.jpg" alt="PW CATALOG" class="block">
+			<div class="middleblock">
+				<div class="blocktext">People Watching: Then and Now<br>-Art Catalog-</div>
+			</div>
+		</div></a>
+
+		<a href="html/aegis-assets.html"><div class="container">
+			<img src="images/Print/13-AEGIS-Rulebook.jpg" alt="AEGIS RULEBOOK" class="block">
+			<div class="middleblock">
+				<div class="blocktext">AEGIS Rulebook Cover<br>-Game Assets-</div>
+			</div>
+		</div></a>
+
+		<a href="html/typo-cd.html"><div class="container">
+			<img src="images/Print/4-CD-Label.jpg" alt="TYPE CD" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Typography Portfolio<br>-CD Label-</div>
+			</div>
+		</div></a>
+		
+		<a href="html/hh-assets.html"><div class="container">
+			<img src="images/Digital/11-Screen-Shot-2017-08-25-at-5.10.jpg" alt="HH MAINMENU" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Handgun Hoedown<br>-Video Game Assets-</div>
+			</div>
+		</div></a>
+
+		<a href="html/gl-wallpaper.html"><div class="container">
+			<img src="images/Digital/17-Gurren-Lagann-Poster.jpg" alt="GL WALLPAPER" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Gurren Lagann<br>-Personal Wallpaper-</div>
+			</div>
+		</div></a>
+
+		<a href="html/fontbook.html"><div class="container">
+			<img src="images/Print/6-Anatomy-and-Nomenclature-of-Letterforms.jpg" alt="FONT BOOK" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Typography Fundamentals<br>-Book-</div>
+			</div>
+		</div></a>
+
+		<a href="html/8bitdo-logo.html"><div class="container">
+			<img src="images/Digital/8Bitdo-LT.jpg" alt="8BitdoREBRAND" class="block">
+			<div class="middleblock">
+				<div class="blocktext">8Bitdo Rebrand<br>-Logo-</div>
+			</div>
+		</div></a>
+		
+		<a href="html/gow-mag.html"><div class="container">
+			<img src="images/Print/3-GOW-Magazine-Spread1.jpg" alt="GOW MAG" class="block">
+			<div class="middleblock">
+				<div class="blocktext">God Of War <br>-Magazine Spread-</div>
+			</div>
+		</div></a>
+
+		<a href="html/br-poster.html"><div class="container">
+			<img src="images/Print/5-Final_Poster.jpg" alt="BR-POSTER" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Baskin Robbins <br>-Poster-</div>
+			</div>
+		</div></a>
+
+		<a href="html/jh-assets.html"><div class="container">
+			<img src="images/Digital/10-Screenshot-(2).jpg" alt="JH1" class="block">
+			<div class="middleblock">
+				<div class="blocktext">jet.hack<br>-Video Game Assets-</div>
+			</div>
+		</div></a>
+
+		<a href="html/pitm.html"><div class="container">
+			<img src="images/Print/8-PITM-Card-Designs.jpg" alt="PITM GAME" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Pitch It To Me!<br>-Card Game-</div>
+			</div>
+		</div></a>
+
+		<a href="html/nvths-yearbook.html"><div class="container">
+			<img src="images/Print/16-Yearbook-Cover-2015.jpg" alt="2015 YEARBOOK" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Nashoba Valley Technical High School 2015<br>-Yearbook Cover-</div>
+			</div>
+		</div></a>
+		
+		<a href="html/rwby-killcount.html"><div class="container">
+			<img src="images/Print/(1)Red-Trailer-KC.jpg" alt="RWBYREDKC" class="block">
+			<div class="middleblock">
+				<div class="blocktext">RWBY Kill Count<br>-Poster-</div>
+			</div>
+		</div></a>
+		
+		<a href="html/venom-cans.html"><div class="container">
+			<img src="images/Digital/9-Venom-Cans.jpg" alt="VENOM CANS" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Venom Energy Rebrand<br>-3D Model-</div>
+			</div>
+		</div></a>
+		
+		<a href="html/kh-card.html"><div class="container">
+			<img src="images/Print/14-KHowell-Business-Card.jpg" alt="KH CARD" class="block">
+			<div class="middleblock">
+				<div class="blocktext">Kenenth Howell<br>-Business Card-</div>
+			</div>
+		</div></a>
+	</div>
+</div>
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidepanel").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidepanel").style.width = "0";
+	}
+</script>
 </body>
 </html>

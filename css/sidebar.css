@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Roboto', sans-serif;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidebar {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+	background-color: #161616;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+.sidebar a {
+	display: block;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.sidebar b {
+	display: block;
+	color: white;
+	padding: 10px 15px;
+	font-size: 18;
+	font-weight: 400;
+}
+
+.sidebar c {
+	display: block;
+}
+ 
+.sidebar a.active {
+	background-color: #2C7FDD;
+	color: white;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: #4F4F4F;
+	color: white;
+}
+
+.sidebar img {
+	width: 100%;
+	max-width: 210px;
+	padding: 25px 15px;
+	height: auto;
+	display: block;
+}
+
+@media screen and (max-width: 850px) {
+	.sidebar {
+		display: none;
+		width: 100%;
+		height: auto;
+		position: fixed;
+	}
+	.sidebar b{
+		display: none;
+	}
+	.sidebar c{
+		display: none;
+	}
+	.sidebar img {
+		max-width: 180px;
+		padding: 10px;
+	}
+	.sidebar a {float: left;}
+}
