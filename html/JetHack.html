@@ -28,6 +28,7 @@
 	}
 
 	#myImg1:hover {opacity: 0.6;}
+	#myImg2:hover {opacity: 0.6;}
 	
 	
 	#caption {
@@ -121,6 +122,15 @@
 		modal.style.display = "block";
 		modalImg.src = this.src;
 		captionText.innerHTML = this.alt;
+	}
+	
+	var img1 = document.getElementById('myImg2');
+	var modalImg1 = document.getElementById('img01');
+	var captionText1 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
 	}
 	
 	// Get the <span> element that closes the modal
