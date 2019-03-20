@@ -47,7 +47,7 @@
 </head>
 
 <body>
-	
+
 <div class="textsmoothing sidebar">
 	<img src="../images/WebsiteLogoWhite.png" alt="logo">
 	<a class="active" href="index.html">Home</a>
@@ -74,29 +74,18 @@
 	<b>401 497 2997</b>
 </div>
 	
-	<button class="openbtn" onclick="openNav()">☰</button> 
+<button class="openbtn" onclick="openNav()">☰</button> 
 <div class="topbar"><img src="../images/Website Logo1.png" alt="logo"></div>
 
 <div class="content">
 	<div class="heading textsmoothing">
 		<br>
-		<h1>Game Engineering</h1>
-		<p></p>
+		<h1>Who is Christopher Cornford?</h1>
+		<p>This is my story, and a little of who I am.</p>
 	</div>
 	
 	<div class="gallery">
-		<a href="../html/JetHack.html"><div class="container">
-			<img src="../images/Game_Engineering/JetHack_Title.png" alt="JetHack" class="block">
-			<div class="middleblock">
-				<div class="blocktext">JetHack</div>
-			</div>
-			</div></a>
-		<a href="../html/HandgunHoedown.html"><div class="container">
-			<img src="../images/Game_Engineering/HH_Title.png" alt="Handgun Hoedown" class="block">
-			<div class="middleblock">
-			<div class="blocktext">Handgun Hoedown</div>
-			</div>
-			</div></a>
+		<img id="About Me" src="../images/AboutMe/AboutMePhoto.png" alt="This is my face" style="width:100%">
 	</div>
 </div>
 
@@ -113,6 +102,36 @@
 
 	function closeNav() {
 	  document.getElementById("mySidepanel").style.width = "0";
+	}
+	
+	// Get the modal
+	var modal = document.getElementById('myModal');
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('myImg1');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	}
+	
+	var img1 = document.getElementById('myImg2');
+	var modalImg1 = document.getElementById('img01');
+	var captionText1 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal.style.display = "none";
 	}
 </script>
 </body>
