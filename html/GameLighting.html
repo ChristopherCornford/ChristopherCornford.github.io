@@ -47,12 +47,12 @@
 </head>
 
 <body>
-
+	
 <div class="textsmoothing sidebar">
 	<img src="../images/WebsiteLogoWhite.png" alt="logo">
 	<a class="active" href="index.html">Home</a>
 	<a href="../html/GameEngineering.html">Game Engineering</a>
-	<a href="../html/.html">Game Lighting</a>
+	<a href="../html/digital.html">Game Lighting</a>
 	<a href="../html/about.html">About Me</a>
 	<c><br></c>
 	<c><hr></c>
@@ -74,20 +74,21 @@
 	<b>401 497 2997</b>
 </div>
 	
-<button class="openbtn" onclick="openNav()">☰</button> 
-<div class="topbar"><img src="../images/Website Logo1.png" alt="logo"></div>
-
 <div class="content">
 	<div class="heading textsmoothing">
 		<br>
-		<h1>JetHack</h1>
-		<p>A game created for Global Game Jame 2018.</p>
-		<p>5 Person Team. Lead Engineer and Level Design </p>
+		<h1>Game Lighting</h1>
+		<p></p>
 	</div>
 	
 	<div class="gallery">
-		<img id="myImg1" src="../images/Game_Engineering/JetHack.gif " alt="Demo" style="width:100%">
-		<img id="myImg2" src="../images/Game_Engineering/Hacking.gif " alt="HackingMinigame" style="width:100%">
+		<img id="myImg1" src="../images/Lighting/Lighting_Desert.PNG" alt="Desert Night Lighting (Unity)" style="width:100%">
+		<img id="myImg2" src="../images/Lighting/Lighting_Dungeon_01.PNG" alt="Dungeon Prison (Unity)" style="width:100%">
+		<img id="myimg3" src="../images/Lighting/Lighting_Dungeon_02.PNG" alt="Dungeon Sewer (Unity)" style="width:100%">
+		<img id="myimg4" src="../images/Lighting/Lighting_Dungeon_03.PNG" alt="Dungeon Crypt (Unity)" style="width:100%">
+		<img id="myimg5" src="../images/Lighting/Lighting_Souls_01.PNG" alt="Cave Alter at Sunset (Unreal Engine)" style="width:100%">
+		<img id="myimg6" src="../images/Lighting/Lighting_Souls_02.PNG" alt="Cave Entrance at Sunset (Unreal Engine)" style="width:100%">
+		<img id="myimg7" src="../images/Lighting/Lighting_Souls_03.PNG" alt="Alter Close-up at Sunset (Unreal Engine)" style="width:100%">
 	</div>
 </div>
 
@@ -118,10 +119,49 @@
 		modalImg.src = this.src;
 		captionText.innerHTML = this.alt;
 	}
-	
 	var img1 = document.getElementById('myImg2');
 	var modalImg1 = document.getElementById('img01');
 	var captionText1 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	var img2 = document.getElementById('myImg3');
+	var modalImg2 = document.getElementById('img01');
+	var captionText2 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	var img3 = document.getElementById('myImg4');
+	var modalImg3 = document.getElementById('img01');
+	var captionText3 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	var img4 = document.getElementById('myImg5');
+	var modalImg4 = document.getElementById('img01');
+	var captionText4 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	var img5 = document.getElementById('myImg6');
+	var modalImg5 = document.getElementById('img01');
+	var captionText5 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
+	}
+	var img6 = document.getElementById('myImg7');
+	var modalImg6 = document.getElementById('img01');
+	var captionText6 = document.getElementById('caption');
 	img1.onclick = function() {
 		modal.style.display = "block";
 		modalImg1.src = this.src;

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="../css/sidebar.css">
 <link rel="stylesheet" href="../css/sidebarmobile.css">
 <link rel="stylesheet" href="../css/singlegallery.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
 <style>
 	body {
 	  margin: 0;
@@ -51,9 +51,9 @@
 <div class="textsmoothing sidebar">
 	<img src="../images/WebsiteLogoWhite.png" alt="logo">
 	<a class="active" href="index.html">Home</a>
-	<a href="html/GameEngineering.html">Game Engineering</a>
-	<a href="html/digital.html">Game Lighting</a>
-	<a href="html/about.html">About Me</a>
+	<a href="../html/GameEngineering.html">Game Engineering</a>
+	<a href="../html/digital.html">Game Lighting</a>
+	<a href="../html/about.html">About Me</a>
 	<c><br></c>
 	<c><hr></c>
 	<b>Contact Information: </b>
@@ -64,9 +64,9 @@
 <div id="mySidepanel" class="textsmoothing sidebarmobile">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	<a class="active" href="index.html">Home</a>
-	<a href="html/GameEngineering.html">Game Engineering</a>
-	<a href="html/digital.html">Game Lighting</a>
-	<a href="html/about.html">About Me</a>
+	<a href="../html/GameEngineering.html">Game Engineering</a>
+	<a href="../html/digital.html">Game Lighting</a>
+	<a href="../html/about.html">About Me</a>
 	<br>
 	<hr>
 	<br>
@@ -117,6 +117,15 @@
 		modal.style.display = "block";
 		modalImg.src = this.src;
 		captionText.innerHTML = this.alt;
+	}
+	
+	var img1 = document.getElementById('myImg2');
+	var modalImg1 = document.getElementById('img01');
+	var captionText1 = document.getElementById('caption');
+	img1.onclick = function() {
+		modal.style.display = "block";
+		modalImg1.src = this.src;
+		captionText1.innerHTML = this.alt;
 	}
 	
 	// Get the <span> element that closes the modal
