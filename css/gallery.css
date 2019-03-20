@@ -1,18 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 .content {
 	position: absolute;
 	margin-left: 250px;
 	width: inherit;
-	background-color: #DDDDDD;
+	background-color: #323232;
 }
 
 /*page header*/
 .heading {
-	background-color: #007BA7;
+	background-color: #336B87;
 	padding: 40px 150px 40px 30px;
 	width: auto;
 	height: auto;

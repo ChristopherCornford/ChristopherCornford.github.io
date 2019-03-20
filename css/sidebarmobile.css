@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .sidebarmobile  {
@@ -11,7 +11,7 @@ body {
 	height: 1000px;
 	top: 0;
 	left: 0;
-	background-color: #474747;
+	background-color: #2A3132;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
@@ -19,7 +19,7 @@ body {
 
 .sidebarmobile a {
 	display: block;
-	color: white;
+	color: antiquewhite;
 	padding: 15px 15px;
 	text-decoration: none;
 	font-size: 18px;
