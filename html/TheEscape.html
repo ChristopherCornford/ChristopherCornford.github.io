@@ -26,9 +26,21 @@
 		cursor: pointer;
 		transition: 0.3s;
 	}
+	#myImg3 {
+		padding: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	#myImg4 {
+		padding: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
 
 	#myImg1:hover {opacity: 0.6;}
 	#myImg2:hover {opacity: 0.6;}
+	#myImg3:hover {opacity: 0.6;}
+	#myImg4:hover {opacity: 0.6;}
 	
 	
 	#caption {
@@ -83,24 +95,23 @@
 <div class="content">
 	<div class="heading textsmoothing">
 		<br>
-		<h1>JetHack</h1>
-		<p>A game created for Global Game Jame 2018.</p>
-		<p>5 Person Team. Lead Engineer and Level Design </p>
+		<h1>The Escape</h1>
+		<p>A team project for my 3D Game Development Class.</p>
+		<p>4 Person Team. Lead Engineer</p>
 	</div>
 	
 	<div class="gallery">
-		<div class="textbox textsmoothing" style="padding: 5px; color: antiquewhite">
-			As the lead engineer for our 2018 Global Game Jam team, I was in charge of creating the hacking mini-game that was the central to the game. I had a great time making it and learned a lot of neat tricks during the process, like state changes based on global objectives.
+		<div class="textbox textsmoothing" style="padding: 5px; color: antiquewhite"> 
+			This was the Final project for my 3D Game Development class.
 			<br>
 			<br>
-			I also was tasked with fine tuning the level design and designing the world the player sees around them, making the world feel dynamic and engaging.
+			During the development of this project I learned how to use the Unity AI NavMesh to create realistic patrolling enemies.
 			<br>
-			<br>
-			<iframe src="https://itch.io/embed/221444" height="150" width="450" frameborder="0"></iframe>
+			I also learned how to use independent states to control enemy movement and animations.
 		</div>
-		<img id="myImg1" src="../images/Game_Engineering/JetHack.gif " alt="Jetpack Mechanic" style="width:100%">
-		<img id="myImg2" src="../images/Game_Engineering/Hacking.gif " alt="HackingMinigame" style="width:100%">
-		
+		<img id="myImg1" src="../images/Game_Engineering/RPG_Boss.PNG" alt="The Warden" style="width: 100%">
+		<img id="myImg2" src="../images/Game_Engineering/RPG_NavMesh.PNG" alt="NavMesh" style="width: 100%">
+		<img id="myImg3" src="../images/Game_Engineering/RPG_Enemy.PNG" alt="Enemies Patrolling" style="width: 100%">
 	</div>
 </div>
 
@@ -140,6 +151,23 @@
 		modalImg1.src = this.src;
 		captionText1.innerHTML = this.alt;
 	}
+	var img2 = document.getElementById('myImg3');
+	var modalImg2 = document.getElementById('img01');
+	var captionText2 = document.getElementById('caption');
+	img2.onclick = function() {
+		modal.style.display = "block";
+		modalImg2.src = this.src;
+		captionText2.innerHTML = this.alt;
+	}
+	var img3 = document.getElementById('myImg4');
+	var modalImg3 = document.getElementById('img01');
+	var captionText3 = document.getElementById('caption');
+	img3.onclick = function() {
+		modal.style.display = "block";
+		modalImg3.src = this.src;
+		captionText3.innerHTML = this.alt;
+	}
+	
 	
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
